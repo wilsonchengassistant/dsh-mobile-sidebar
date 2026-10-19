@@ -1,6 +1,6 @@
 {
   "name": "dsh-mobile-sidebar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Give the whole left column back to the conversation on narrow screens: below the 1024px auto-collapse breakpoint the sidebar is removed from the frame entirely (no 56px icon rail), and a header button opens it as an overlay drawer with a tap-anywhere scrim.",
   "license": "MIT",
   "author": "Wilson Cheng <wilson.cheng.assistant@gmail.com>",
