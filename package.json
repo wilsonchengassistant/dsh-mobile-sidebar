@@ -1,0 +1,53 @@
+{
+  "name": "dsh-mobile-sidebar",
+  "version": "0.1.0",
+  "description": "Give the whole left column back to the conversation on narrow screens: below the 1024px auto-collapse breakpoint the sidebar is removed from the frame entirely (no 56px icon rail), and a header button opens it as an overlay drawer with a tap-anywhere scrim.",
+  "license": "MIT",
+  "author": "Wilson Cheng <wilson.cheng.assistant@gmail.com>",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/**/*.js",
+    "cordis.patch.yml",
+    "README.md",
+    "screenshots.json",
+    "docs/*.png",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "mobile",
+    "sidebar",
+    "responsive",
+    "drawer"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-primitives",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4"
+  }
+}

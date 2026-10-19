@@ -1,0 +1,12 @@
+# dsh bundle patch: inserts this plugin into a profile's layer stack.
+#
+# With this file declared as `dsh.bundle.patch` in package.json, `dsh plugin
+# add` wires the plugin into the profile by itself — no hand-written `insert:`
+# row is needed in the profile's own cordis.patch.yml.
+#
+# The browser half (./client) is what actually does the work: it styles the
+# shell frame and contributes the header button plus the drawer scrim. The Host
+# half is intentionally empty.
+- insert:
+    - id: mobile-sidebar
+      name: 'dsh-mobile-sidebar'

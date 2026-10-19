@@ -1,0 +1,6 @@
+{
+  "mobile-sidebar-hidden.png": "Mobile viewport (390px) with the sidebar closed: the collapsed icon rail is gone and the conversation keeps the full width. The header carries the panel-left toggle.",
+  "mobile-sidebar-drawer.png": "Tapping the header toggle opens the sidebar as a 300px drawer over the still-full-width conversation, with a tap-anywhere scrim.",
+  "mobile-panel-toggle.png": "On a global panel (Plugins) there is no header slot to inject into, so the toggle falls back to a fixed control in the shell overlay layer.",
+  "desktop-unchanged.png": "At 1280px nothing changes: the 280px sidebar is intact and neither control is rendered."
+}
