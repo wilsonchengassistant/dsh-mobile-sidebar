@@ -1,5 +1,7 @@
 # dsh-mobile-sidebar
 
+[中文說明](README.zh.md) · English
+
 Give the whole left column back to the conversation on phones.
 
 ## What it changes
