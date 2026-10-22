@@ -8,6 +8,12 @@ the project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html
 
 _Nothing pending. The published tarball matches this repository._
 
+## 0.1.3 — 2026-10-22
+
+- Add the `repository` field to `package.json` so the plugin registry can link
+  the published npm package back to this repository: it reads the package's
+  `repository` field and only lists the npm version when it points here.
+
 ## 0.1.2 — 2026-10-21
 
 - Add a Chinese README (`README.zh.md`), linked from `README.md` so it is
